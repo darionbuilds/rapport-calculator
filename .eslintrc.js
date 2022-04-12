@@ -4,7 +4,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['airbnb-typescript/base'],
+      extends: ['airbnb', 'airbnb-typescript'],
       parserOptions: {
         project: ['./tsconfig.json'],
       },

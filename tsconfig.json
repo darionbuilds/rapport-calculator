@@ -5,6 +5,7 @@
       "node",
       "jest"
     ],
+    "jsx": "preserve",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,10 +18,20 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": true,
+    "incremental": true
   },
   "compileOnSave": true,
   "include": [
-    "./src/"
+    "."
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
